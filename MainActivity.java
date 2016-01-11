@@ -16,23 +16,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        // CONTAINER_1
-
-        FragmentManager fragmentManager1 = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction1 = fragmentManager1.beginTransaction();
-        Fragment1 fragment1 = new Fragment1();
-        fragmentTransaction1.add(R.id.main_container_1, fragment1);
-        fragmentTransaction1.commit();
-
-        // CONTAINER_2
-        FragmentManager fragmentManager2 = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction2 = fragmentManager2.beginTransaction();
-        Fragment2 fragment2 = new Fragment2();
-        fragmentTransaction2.add(R.id.main_container_2, fragment2);
-        fragmentTransaction2.commit();
 
         // START ACTIVITY TEST
         Button buttonStartActivityTest = (Button)findViewById(R.id.main_button);
